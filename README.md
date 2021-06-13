@@ -1,2 +1,2 @@
-# Projetos do módulo 1 do curso de Linguagem e programação da Blue Edtech
+Projetos do módulo 1 do curso de Linguagem e Programação 
 Linguagem  utilizada: Python
