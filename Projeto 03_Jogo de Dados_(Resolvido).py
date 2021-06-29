@@ -10,20 +10,17 @@ while True :
         print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n')
         print(f'Rodada {i}')
         print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n')
-        jogador1 = [random.randint(1,2)]
-        jogador2 = [random.randint(1,2)]
+        jogador1 = [random.randint(1,6)]
+        jogador2 = [random.randint(1,6)]
         print(f'Jogador 1 tirou {jogador1}\n') 
         print(f'Jogador 2 tirou {jogador2}\n')
         if jogador1 > jogador2: # Ordenar esse dicionário, sabendo que o vencedor tirou o maior número no dado.
             vitoriaJogadorUm +=1
             partida['jogador1'] +=1
-        elif jogador1 < jogador2:
+        else:
             vitoriaJogadorDois +=1
             partida['jogador2'] +=1
-        else:
-            pass
         contador += 1
-
         
    
     print('O resultado foi: \n')  # Mostrar no final qual jogador ganhou mais rodadas e foi o grande campeão.
@@ -32,10 +29,7 @@ while True :
     if vitoriaJogadorUm > vitoriaJogadorDois:
         print(f'Vitoria do jogador 1')
         break
-    elif vitoriaJogadorDois > vitoriaJogadorUm:
+    else:
         print(f'Vitoria do jogador 2')
         print()
-        break
-    else: 
-        print(f'EMPATE')
         break
